@@ -1,6 +1,7 @@
 ### Installing
 
-We offer binary images of the releases here: http://www.cinetwork.io
+We Will offer binary images of the releases here: http://www.cinetwork.io
+(Not Now! We are building web site now..)
 
 If you would like to compile yourself, read on.
 

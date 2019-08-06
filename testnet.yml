@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  node1:
+    image: funkypenguin/CrowdInvestNetwork
+    container_name: CrowdInvestNetworktest-node1
+    volumes:
+      - ../CrowdInvestNetworkd:/var/lib/CrowdInvestNetworkd/
+    networks:
+      testnet:
+        ipv4_address: 13.125.236.77
+  
+#  node2:
+#    image: funkypenguin/CrowdInvestNetwork
+#    container_name: CrowdInvestNetworktest-node2
+#    networks:
+#      testnet:
+#        ipv4_address: 13.125.236.78
+  
+#  node3:
+#    image: funkypenguin/CrowdInvestNetwork
+#    container_name: CrowdInvestNetworktest-node3
+#    networks:
+#      testnet:
+#        ipv4_address: 13.125.236.77
+
+networks:
+  testnet:
+    ipam:
+      config:
+        - subnet: 13.125.236.0/24
+

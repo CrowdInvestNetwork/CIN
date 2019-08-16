@@ -115,7 +115,7 @@ then
 fi
 
 # -- Config
-GITHUB_REPO="https://github.com/respectme/CIN/CIN.git"
+GITHUB_REPO="https://github.com/CrowdInvestNetwork/CIN/CIN.git"
 CLONE_DIR="$BUILD_DIRECTORY/CrowdInvestNetwork-buildall"
 TARGET_DIR="$BUILD_DIRECTORY/CrowdInvestNetwork-releases"
 DYNAMIC_RELEASE="CrowdInvestNetwork-${TAG_VERSION}-linux-CLI"

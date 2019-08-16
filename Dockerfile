@@ -25,7 +25,7 @@ RUN apt-get update && \
       g++-4.9 \
       git cmake \
       libboost1.58-all-dev && \
-    git clone https://github.com/respectme/CIN/CIN.git /src/CrowdInvestNetwork && \
+    git clone https://github.com/CrowdInvestNetwork/CIN/CIN.git /src/CrowdInvestNetwork && \
     cd /src/CrowdInvestNetwork && \
     git checkout $CROWDINVESTNETWORK_BRANCH && \
     mkdir build && \

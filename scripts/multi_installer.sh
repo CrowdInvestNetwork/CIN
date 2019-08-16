@@ -3,7 +3,7 @@
 # CrowdInvestNetwork Multi-installer
 # a one line clone-and-compile for CrowdInvestNetwork:
 #
-#     ` $ curl -sL "https://github.com/respectme/CIN/blob/master/scripts/multi_installer.sh" | bash
+#     ` $ curl -sL "https://github.com/CrowdInvestNetwork/CIN/blob/master/scripts/multi_installer.sh" | bash
 #
 # Supports Ubuntu 16.04 LTS, OSX 10.10+
 # Supports building project from current directory (automatic detection)
@@ -54,7 +54,7 @@ _set_wd() {
             esac
         fi
         mkdir CrowdInvestNetwork
-        git clone -b master -q https://github.com/respectme/CIN CrowdInvestNetwork  >>build.log 2>&1 || _fail "Unable to clone git repository. Please see build.log for more information"
+        git clone -b master -q https://github.com/CrowdInvestNetwork/CIN CrowdInvestNetwork  >>build.log 2>&1 || _fail "Unable to clone git repository. Please see build.log for more information"
         cd CrowdInvestNetwork
     fi
 }
@@ -109,7 +109,7 @@ _configure_linux() {
     elif [ "$(awk -F= '/^NAME/{print $2}' /etc/os-release)" = "\"Debian GNU/Linux\"" ]; then
         _configure_debian
     else
-        _fail "Your OS version isn't supported by this installer. Please consider adding support for your OS to the project ('https://github.com/respectme/CIN')"
+        _fail "Your OS version isn't supported by this installer. Please consider adding support for your OS to the project ('https://github.com/CrowdInvestNetwork/CIN')"
     fi
 }
 
@@ -138,7 +138,7 @@ _configure_os() {
             _configure_osx
             ;;
         *)
-            _fail "This installer only runs on OSX 10.10+ and Ubuntu 16.04+. Please consider adding support for your OS to the project ('https://github.com/respectme/CIN')"
+            _fail "This installer only runs on OSX 10.10+ and Ubuntu 16.04+. Please consider adding support for your OS to the project ('https://github.com/CrowdInvestNetwork/CIN')"
             ;;
     esac
     _note "Operating system configuration completed. You're halfway there!"
@@ -153,4 +153,4 @@ _set_wd
 _build_CrowdInvestNetwork
 
 _note "Installation complete!"
-_note "Look in 'CrowdInvestNetwork/build/src/' for the executible binaries. See 'https://github.com/respectme/CIN' for more project support. Cowabunga!"
+_note "Look in 'CrowdInvestNetwork/build/src/' for the executible binaries. See 'https://github.com/CrowdInvestNetwork/CIN' for more project support. Cowabunga!"

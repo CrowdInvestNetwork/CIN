@@ -116,7 +116,7 @@ void balance(CryptoNote::INode &node, CryptoNote::WalletGreen &wallet,
 
     /* We can make a better approximation of the view wallet balance if we
        ignore fusion transactions.
-       See https://github.com/respectme/CIN	 */
+       See https://github.com/CrowdInvestNetwork/CIN	 */
     if (viewWallet)
     {
         /* Not sure how to verify if a transaction is unlocked or not via

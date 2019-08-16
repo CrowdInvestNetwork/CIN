@@ -32,7 +32,7 @@ echo -e "\n\n\n== CLONING CrowdInvestNetwork in $sourcefolder"
 # master branch instead, and it will get the source from the last
 # time that we merged development to master, which normally only
 # happens when we create a version release.
-git clone -b development https://github.com/respectme/CIN $sourcefolder
+git clone -b development https://github.com/CrowdInvestNetwork/CIN $sourcefolder
 cd $sourcefolder
 ls -al
 
@@ -56,7 +56,7 @@ ls -al
 # distribution. We should also include the LICENSE file in this 
 # zip file just in case.
 echo -e "\n\n\n== COMPRESSING BINARIES"
-wget https://github.com/respectme/CIN/blob/master/LICENSE
+wget https://github.com/CrowdInvestNetwork/CIN/blob/master/LICENSE
 zip CrowdInvestNetwork-dev-bin-$(date +%F)-linux.zip miner LICENSE zedwallet CrowdInvestNetworkd CrowdInvestNetwork-service
 
 # Create directories to keep always-up-to-date binaries for 

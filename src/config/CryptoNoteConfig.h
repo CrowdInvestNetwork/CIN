@@ -197,8 +197,8 @@ const uint64_t DATABASE_READ_BUFFER_MB_DEFAULT_SIZE          = 10;
 const uint32_t DATABASE_DEFAULT_MAX_OPEN_FILES               = 100;
 const uint16_t DATABASE_DEFAULT_BACKGROUND_THREADS_COUNT     = 2;
 
-const char     LATEST_VERSION_URL[]                          = "https://github.com/respectme/CIN/releases";
-const std::string LICENSE_URL                                = "https://github.com/respectme/CIN/blob/master/LICENSE";
+const char     LATEST_VERSION_URL[]                          = "https://github.com/CrowdInvestNetwork/CIN/releases";
+const std::string LICENSE_URL                                = "https://github.com/CrowdInvestNetwork/CIN/blob/master/LICENSE";
 const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 {
     {  0x43, 0x72, 0x6f, 0x77, 0x64, 0x49, 0x6e, 0x76, 0x65, 0x73, 0x74, 0x4e, 0x65, 0x74, 0x00, 0x00  }

@@ -88,7 +88,7 @@ void balance(const std::shared_ptr<WalletBackend> walletBackend)
 
     /* We can make a better approximation of the view wallet balance if we
        ignore fusion transactions.
-       See https://github.com/respectme/CIN 	 */
+       See https://github.com/CrowdInvestNetwork/CIN 	 */
     if (walletBackend->isViewWallet())
     {
         unlockedBalance = 0;

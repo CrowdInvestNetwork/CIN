@@ -59,7 +59,7 @@ const uint64_t MINIMUM_FEE                                   = UINT64_C(100);
 
 /* The mixin to use by default with zedwallet and CrowdInvestNetwork-service */
 /* DEFAULT_MIXIN_V0 is the mixin used before MIXIN_LIMITS_V1_HEIGHT is started */
-const uint64_t DEFAULT_MIXIN	                             = 3;
+const uint64_t DEFAULT_MIXIN	                             = 0;
 //	const uint64_t MIXIN_HEIGHT				     = 62000;
 
 const uint64_t DEFAULT_DUST_THRESHOLD                        = UINT64_C(10);
@@ -80,7 +80,7 @@ const size_t   DIFFICULTY_LAG_V1                             = 15;
 const size_t   DIFFICULTY_LAG_V2                             = 15;
 static_assert(2 * DIFFICULTY_CUT <= DIFFICULTY_WINDOW - 2, "Bad DIFFICULTY_WINDOW or DIFFICULTY_CUT");
 
-const size_t   MAX_BLOCK_SIZE_INITIAL                        = 100000;
+const size_t   MAX_BLOCK_SIZE_INITIAL                        = 6400000;
 const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_NUMERATOR         = 100 * 1024;
 const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_DENOMINATOR       = 365 * 24 * 60 * 60 / DIFFICULTY_TARGET;
 const uint64_t MAX_EXTRA_SIZE                                = 140000;
